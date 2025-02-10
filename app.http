@@ -1,0 +1,38 @@
+POST http://localhost:5000/contacts
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@example.com",
+    "phone": "1234567890",
+    "address": "123 Street, City"
+}
+
+###
+POST http://localhost:5000/contacts
+Content-Type: application/json
+
+{
+    "name": "Hema",
+    "email": "hema@example.com",
+    "phone": "1234567899",
+    "address": "123 Street, City"
+}
+
+###
+GET http://localhost:5000/contacts
+
+###
+
+DELETE http://localhost:5000/contacts/1
+
+###
+PUT http://localhost:5000/contacts/2
+Content-Type: application/json 
+
+{
+  "name": "John Updated",
+  "email": "john.updated@example.com",
+  "phone": "9876543210",
+  "address": "456 New Street, New City"
+}
